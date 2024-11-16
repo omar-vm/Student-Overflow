@@ -1,4 +1,5 @@
 from PyQt6 import QtWidgets
+from .signup import SignUpWindow
 from templates.StudenOverf.ui_login import Ui_Widget
 import requests
 from PyQt6.QtWidgets import QMessageBox
@@ -32,3 +33,7 @@ class LoginWindow(QtWidgets.QWidget, Ui_Widget):
 
         except requests.exceptions.ConnectionError:
             QMessageBox.critical(self, "Error", "No se pudo conectar con el servidor")
+
+    def open_signup_window(self):
+        self.signup_window = SignUpWindow()
+        self.signup_window.show()
