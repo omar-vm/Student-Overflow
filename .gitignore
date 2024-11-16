@@ -189,5 +189,8 @@
   ```
 
 =======
+.venv
+.vscode
+__pycache__
 .env
 >>>>>>> 794e703 (diagramas)
