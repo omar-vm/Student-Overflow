@@ -1,196 +1,66 @@
-<<<<<<< HEAD
-### Git Cheat Sheet Básico
+# Byte-compiled / Optimized files
+__pycache__/
+*.py[cod]
+*$py.class
 
-#### Configuración Inicial
-- Configurar nombre de usuario:
-  ```bash
-  git config --global user.name "Tu Nombre"
-  ```
-- Configurar correo electrónico:
-  ```bash
-  git config --global user.email "tuemail@example.com"
-  ```
-- Ver configuración actual:
-  ```bash
-  git config --list
-  ```
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
 
-#### Iniciando y Clonando Repositorios
-- Inicializar un repositorio nuevo:
-  ```bash
-  git init
-  ```
-- Clonar un repositorio existente:
-  ```bash
-  git clone <URL-del-repo>
-  ```
+# Archivos de configuración de entorno
+*.env
+.env.local
+.env.development
+.env.production
 
-#### Cambios en el Proyecto
-- Ver estado de archivos:
-  ```bash
-  git status
-  ```
-- Agregar un archivo al área de preparación (stage):
-  ```bash
-  git add <nombre-del-archivo>
-  ```
-- Agregar todos los archivos al área de preparación:
-  ```bash
-  git add .
-  ```
-- Remover archivo del área de preparación:
-  ```bash
-  git reset <nombre-del-archivo>
-  ```
-- Hacer commit de los cambios:
-  ```bash
-  git commit -m "Mensaje del commit"
-  ```
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
 
-#### Ver Cambios
-- Ver cambios en archivos que no están en el stage:
-  ```bash
-  git diff
-  ```
-- Ver historial de commits:
-  ```bash
-  git log
-  ```
-- Ver historial simplificado de commits:
-  ```bash
-  git log --oneline
-  ```
+# Archivos generados por LibreOffice (si los usas)
+*.~lock.*
 
-#### Ramas (Branches)
-- Crear una nueva rama:
-  ```bash
-  git branch <nombre-de-la-rama>
-  ```
-- Listar ramas locales:
-  ```bash
-  git branch
-  ```
-- Cambiar a otra rama:
-  ```bash
-  git checkout <nombre-de-la-rama>
-  ```
-- Crear y cambiar a una nueva rama:
-  ```bash
-  git checkout -b <nombre-de-la-rama>
-  ```
-- Eliminar una rama:
-  ```bash
-  git branch -d <nombre-de-la-rama>
-  ```
+# Archivos de configuración de DBeaver
+.dbeaver-data/
 
-#### Unir Cambios (Merge)
-- Unir una rama a la rama actual:
-  ```bash
-  git merge <nombre-de-la-rama>
-  ```
+# Archivos temporales de pytest
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
 
-#### Actualización y Sincronización
-- Descargar cambios sin aplicar (fetch):
-  ```bash
-  git fetch
-  ```
-- Traer cambios y fusionar con la rama actual (pull):
-  ```bash
-  git pull
-  ```
-- Enviar cambios al repositorio remoto:
-  ```bash
-  git push origin <nombre-de-la-rama>
-  ```
+# Archivos de caché de Flask
+instance/
+*.cfg
+*.sqlite3
 
-#### Remotos (Remotes)
-- Agregar un repositorio remoto:
-  ```bash
-  git remote add origin <URL-del-repo>
-  ```
-- Ver los remotos configurados:
-  ```bash
-  git remote -v
-  ```
-- Cambiar URL del remoto:
-  ```bash
-  git remote set-url origin <nueva-URL>
-  ```
+# Archivos de empaquetado
+*.egg-info/
+dist/
+build/
 
-#### Revertir Cambios
-- Deshacer cambios en un archivo (antes de hacer commit):
-  ```bash
-  git checkout -- <nombre-del-archivo>
-  ```
-- Deshacer el último commit (manteniendo los cambios en staging):
-  ```bash
-  git reset --soft HEAD~1
-  ```
-- Deshacer el último commit (eliminando los cambios):
-  ```bash
-  git reset --hard HEAD~1
-  ```
+# Archivos de compilación de UI (PyQt6)
+*.pyc
+*.pyo
+*.uic.py
 
-#### Etiquetas (Tags)
-- Crear una etiqueta:
-  ```bash
-  git tag <nombre-del-tag>
-  ```
-- Crear una etiqueta con mensaje:
-  ```bash
-  git tag -a <nombre-del-tag> -m "Mensaje del tag"
-  ```
-- Listar etiquetas:
-  ```bash
-  git tag
-  ```
-- Subir etiquetas al remoto:
-  ```bash
-  git push origin <nombre-del-tag>
-  ```
+# Archivos PDF y de presentación
+*.pdf
+*.odp
 
-#### Stash (Almacenamiento Temporal)
-- Guardar cambios sin hacer commit (stash):
-  ```bash
-  git stash
-  ```
-- Aplicar el último stash:
-  ```bash
-  git stash apply
-  ```
-- Listar stashes:
-  ```bash
-  git stash list
-  ```
+# Archivos de respaldo y temporales
+*~
+*.bak
+*.swp
 
-#### Otros Comandos Útiles
-- Mostrar historial con los cambios específicos:
-  ```bash
-  git log -p
-  ```
-- Buscar una palabra clave en el historial de commits:
-  ```bash
-  git log -S <palabra-clave>
-  ```
-- Mostrar el árbol de commits:
-  ```bash
-  git log --graph --oneline --all --decorate
-  ```
+# Archivos de Docker (si decides usar contenedores)
+docker-compose.override.yml
 
-#### Archivos para Ignorar en el Repositorio (.gitignore)
-- Ignorar el archivo de entorno:
-  ```
-  .env
-  ```
-- Ignorar archivos compilados de Python:
-  ```
-  __pycache__/
-  *.pyc
-  ```
-
-=======
-.venv
-.vscode
-__pycache__
-.env
->>>>>>> 794e703 (diagramas)
+# Archivos de base de datos locales
+*.db
+*.sqlite
