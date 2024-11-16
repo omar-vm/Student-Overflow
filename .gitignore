@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Git Cheat Sheet Básico
 
 #### Configuración Inicial
@@ -187,3 +188,6 @@
   *.pyc
   ```
 
+=======
+.env
+>>>>>>> 794e703 (diagramas)
