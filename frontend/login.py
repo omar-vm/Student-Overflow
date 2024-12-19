@@ -1,9 +1,13 @@
 from PyQt6 import QtWidgets
+
+from .dashboard import DashboardWindow
+
+
 from .signup import SignUpWindow
 from templates.StudenOverf.ui_login import Ui_Widget
 import requests
 from PyQt6.QtWidgets import QMessageBox
-from .dashboard import DashboardWindow
+
 
 class LoginWindow(QtWidgets.QWidget, Ui_Widget):
     def __init__(self):
