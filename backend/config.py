@@ -11,7 +11,11 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     ENV = 'development'
+    CORS_HEADERS = 'Content-Type'
 
 class ProductionConfig(Config):
     DEBUG = False
     ENV = 'production'
+    SESSION_COOKIE_SECURE = True  
+    REMEMBER_COOKIE_SECURE = True 
+
